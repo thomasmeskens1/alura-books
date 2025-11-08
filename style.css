@@ -1,4 +1,9 @@
 @import url("./styles/header.css");
+@import url("./styles/banner.css");
+@import url("./styles/carrossel.css");
+@import url("./styles/recentes.css");
+@import url("./styles/contato.css");
+@import url("./styles/rodape.css");
 
 :root{
     --cor-de-fundo: #EBECEE;
@@ -10,4 +15,8 @@
 
 body{
     background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--font-principal);
+    margin: 0;
+    overflow-x: hidden;
 }

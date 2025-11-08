@@ -1,0 +1,32 @@
+.recentes{
+    background: var(--azul-degrade);
+    text-align: center;
+    padding: 2em
+}
+
+.recentes__titulo{
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.recentes__link{
+    background-color: var(--amarelo-destaque);
+    color: var(--branco-principal);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.recentes__item{
+    margin: 1.5em 0.5em;
+}
+
+.recentes__lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
