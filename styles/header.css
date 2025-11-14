@@ -1,4 +1,4 @@
-.cabecalho__menu-hamburguer{
+.cabecalho__menu-hamburguer {
     width: 24px;
     height: 24px;
     background-image: url("../img/Menu.svg");
@@ -7,7 +7,7 @@
     display: inline-block;
 }
 
-.cabecalho{
+.cabecalho {
     background-color: var(--branco-principal);
     display: flex;
     justify-content: space-between;
@@ -16,18 +16,18 @@
     position: relative;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
 }
 
-.container__imagem{
+.container__imagem {
     padding: 1em;
     display: inline-block;
     max-width: 100%;
 }
 
-.lista-menu{
+.lista-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -35,28 +35,28 @@
     width: 60vw;
 }
 
-.container__botao{
+.container__botao {
     display: none;
 }
 
-.container__botao:checked~.lista-menu{
+.container__botao:checked~.lista-menu {
     display: block;
 }
 
-.lista-menu__titulo, 
-.lista-menu__item{
+.lista-menu__titulo,
+.lista-menu__item {
     padding: 1em;
     background-color: var(--branco-principal);
 }
 
-.lista-menu__titulo{
+.lista-menu__titulo {
     color: var(--amarelo-destaque);
     font-family: var(--font-principal);
     font-weight: 700;
     font-size: 1rem;
 }
 
-.lista-menu__link{
+.lista-menu__link {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 400;
@@ -66,4 +66,71 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container__imagem-transparente {
+        display: none;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .container__titulo,
+    .container__titulo--negrito {
+        font-family: var(--font-logo);
+        font-size: 30px;
+        color: var(--preto);
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+        list-style: none;
+        gap: 2em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .opcoes__item {
+        font-family: var(--font-principal);
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: var(--preto);
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .opcoes__botao:checked~.lista-menu {
+        display: inline-block;
+        width: auto;
+        left: auto;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
 }

@@ -30,3 +30,21 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media screen and (min-width:1024px) {
+    .recentes__titulo{
+        font-size: 24px;
+    }
+
+    .recentes__link{
+        font-size: 24px;
+    }
+
+    .recentes__item{
+        margin: 2.5em 1em;
+    }
+
+    .recentes{
+        padding: 2em 5em;
+    }
+}
