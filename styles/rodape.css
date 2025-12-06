@@ -50,3 +50,14 @@
         font-size: 14px;
     }
 }
+
+@media screen and (min-width:1728px) {
+    .lista-rodape{
+        border-left: 1px solid #474646;
+        padding-left: 1em;
+    }
+
+    .rodape {
+        padding: 4em 0;
+    }
+}

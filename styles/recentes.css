@@ -48,3 +48,10 @@
         padding: 2em 5em;
     }
 }
+
+
+@media screen and (min-width:1728px) {
+    .recentes{
+        padding: 3em 25em;
+    }
+}
